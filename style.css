@@ -22,4 +22,19 @@ nav .logo {
   width: 51px;
   height: auto;
   padding: 17px 9px;
+}
+nav ul {
+  margin-right: 25px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 8px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
