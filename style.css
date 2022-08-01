@@ -37,4 +37,10 @@ nav ul li a {
   font-size: 1.2em;
   font-family: "Times New Roman", Times, serif;
   color: white;
+  padding: 6px 13px;
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  background: red;
+  border-radius: 2px;
 }/*# sourceMappingURL=style.css.map */

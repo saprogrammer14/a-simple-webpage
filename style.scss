@@ -46,7 +46,17 @@ nav{
                 
                 @include menu-text-style();
                 color: $menu-text-color;
+                padding: 6px 13px;
+                transition: 0.4s;
+
+                
+                
+                &:hover{
+                    background: red;
+                    border-radius: 2px;
+                }
             }
+            
         }
     }
 }
