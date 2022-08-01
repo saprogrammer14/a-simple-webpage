@@ -8,4 +8,15 @@
   background: url(img/background.png) no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+nav .logo {
+  width: 51px;
+  height: auto;
+  padding: 17px 9px;
 }/*# sourceMappingURL=style.css.map */
