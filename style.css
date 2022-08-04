@@ -47,4 +47,47 @@ nav ul li a {
 nav ul li a:hover {
   background: red;
   border-radius: 2px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.center h1 {
+  color: white;
+  font-size: 4em;
+}
+.center h2 {
+  color: white;
+  font-size: 3.8em;
+  margin-top: 25px;
+}
+.center .buttons {
+  margin: 35px 280px;
+}
+.center .buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffb3b3;
+  background-color: red;
+  border: 1px solid red;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.center .buttons button:hover {
+  background: #cc0000;
+}
+.center .buttons .btn {
+  margin-left: 25px;
 }/*# sourceMappingURL=style.css.map */
