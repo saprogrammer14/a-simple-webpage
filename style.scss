@@ -1,16 +1,23 @@
-*{
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Regular.ttf);
+}
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
-$menu-background-color: rgba(0,0,0,0.4);
-$menu-text-color:white;
+$menu-background-color: rgba(0, 0, 0, 0.4);
+$menu-text-color: white;
 
-@mixin menu-text-style{
+@mixin menu-text-style {
     text-decoration: none;
     font-size: 1.2em;
-    font-family:'Times New Roman', Times, serif;
+    // font-family:'Times New Roman', Times, serif;
 
 }
 
@@ -19,13 +26,13 @@ $menu-text-color:white;
     border-radius: 2px;
 }
 
-.wrapper{
+.wrapper {
     background: url(img/background.png) no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-nav{
+nav {
     height: 80px;
     width: 100%;
     background-color: $menu-background-color;
@@ -33,44 +40,44 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 
-    .logo{
+    .logo {
         width: 51px;
         height: auto;
         padding: 17px 9px;
     }
 
-    ul{
+    ul {
         margin-right: 25px;
 
-        li{
+        li {
             list-style: none;
             display: inline-block;
             line-height: 80px;
             margin: 0 8px;
 
-            a.active{
+            a.active {
                 @include menu-hover-effect();
             }
 
-            a{
-                
+            a {
+
                 @include menu-text-style();
                 color: $menu-text-color;
                 padding: 6px 13px;
                 transition: 0.4s;
 
-                
-                
-                &:hover{
+
+
+                &:hover {
                     @include menu-hover-effect();
                 }
             }
-            
+
         }
     }
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,22 +85,24 @@ nav{
     min-height: 80vh;
     user-select: none;
 
-    h1{
+    h1 {
         color: white;
-        font-size: 4em;
+        font-size: 5em;
         // width: 900px;
         // text-align: center;
 
     }
-    h2{
+
+    h2 {
         color: white;
         font-size: 3.8em;
         margin-top: 25px;
     }
 
-    .buttons{
+    .buttons {
         margin: 35px 280px;
-        button{
+
+        button {
             height: 50px;
             width: 150px;
             font-size: 1.2em;
@@ -106,12 +115,13 @@ nav{
             border-radius: 25px;
             transition: 0.5s;
 
-            &:hover{
+            &:hover {
                 background: #cc0000;
             }
 
         }
-        .btn{
+
+        .btn {
             margin-left: 25px;
         }
 
